@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" id="index_main">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Profi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style_login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/l-ibs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+
+  <header id="3dprofi">
+
+    <div class="logo">
+      <img src="../icons/logo.png" alt="#">
+    </div>
+
+
+    <div class="name_logo"><a href="index_main.html">3DProfi</a></div>
+
+    <div class="container">
+      <a href="index_reviews.html">
+        <div>Отзывы</div>
+      </a>
+      <a href="index_school.html">
+        <div>Преподователи</div>
+      </a>
+      <a href="index_basket.html">
+        <div>Курсы</div>
+      </a>
+      <a href="index_faq.html">
+        <div>FAQ</div>
+      </a>
+    </div>
+    <div class="exit"><a href="index1.html">
+        <img src="../icons/exit.png" alt="#"></a>
+    </div>
+    <div class="exit_line">
+      <img src="../icons/exit_line.png" alt="#">
+    </div>
+    <a href="#">
+      <div class="box_login">
+      </div>
+      <div class="name_login">Логин</div>
+    </a>
+
+    <div class="line_header"></div>
+
+  </header>
+  <main>
+    <div class="main_back"></div>
+    <div class="login">
+      <div id="circle"></div>
+
+      <input type="file" id="fileInput" style="display: none;" accept="image/*" />
+
+
+
+      <button id="uploadBtn" class="uploadBtn">
+        <img src="icons.png" alt="">
+        <p>Загрузите фото</p>
+      </button>
+      <button id="removeBtn" class="removeBtn">
+        Удалить фото
+      </button>
+
+      <button id="saveBtn" class="saveBtn">
+        Сохранить изменения
+      </button>
+    </div>
+    <div class="text_the_input">
+      <p>Имя</p>
+      <p>Фамилия</p>
+      <p>Отчество</p>
+      <p>Email</p>
+      <p>Номер телефона</p>
+      <p>Пароль</p>
+    </div>
+    <div class="input_1">
+      <input type="text" id="input1" placeholder="" required />
+      <input type="text" id="input2" placeholder="" required />
+      <input type="text" id="input3" placeholder="" required />
+      <input type="email" id="input4" placeholder="" required />
+      <input type="tel" id="input5" placeholder="" pattern="\+?[0-9]{10,15}" required />
+      <input type="password" id="input6" placeholder="" required />
+    </div>
+
+    <script>
+      function loadPhoto() {
+        const savedPhoto = localStorage.getItem('userPhoto');
+        if (savedPhoto) {
+          document.getElementById('circle').style.backgroundImage = 'url(' + savedPhoto + ')';
+        }
+      }
+
+      function validateInputs() {
+        const errors = [];
+
+        const name = document.getElementById('input1').value.trim();
+        const surname = document.getElementById('input2').value.trim();
+        const patronymic = document.getElementById('input3').value.trim();
+        const email = document.getElementById('input4').value.trim();
+        const phone = document.getElementById('input5').value.trim();
+        const password = document.getElementById('input6').value.trim();
+
+        if (!name) errors.push('Пожалуйста, введите имя.');
+        if (!surname) errors.push('Пожалуйста, введите фамилию.');
+        if (!patronymic) errors.push('Пожалуйста, введите отчество.');
+
+        const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        if (!email || !emailPattern.test(email))
+          errors.push('Пожалуйста, введите корректный Email.');
+
+        const phonePattern = /^\+?[0-9]{10,15}$/;
+        if (!phone || !phonePattern.test(phone))
+          errors.push('Пожалуйста, введите корректный номер телефона.');
+
+        if (!password || password.length < 6)
+          errors.push('Пароль должен быть не менее 6 символов.');
+
+        return errors;
+      }
+
+      document.getElementById('uploadBtn').onclick = function () {
+        document.getElementById('fileInput').click();
+      };
+
+      document.getElementById('fileInput').onchange = function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            document.getElementById('circle').style.backgroundImage = 'url(' + e.target.result + ')';
+            localStorage.setItem('userPhoto', e.target.result);
+          }
+          reader.readAsDataURL(file);
+        }
+      };
+
+      document.getElementById('saveBtn').onclick = function () {
+        const errors = validateInputs();
+        if (errors.length > 0) {
+          alert(errors.join('\n'));
+          return;
+        }
+
+        // Сохраняем данные если валидация прошла успешно
+        const inputs = document.querySelectorAll('.input_1 input');
+        inputs.forEach(input => {
+          localStorage.setItem(input.id, input.value);
+        });
+        alert('Данные успешно сохранены!');
+      };
+
+      document.getElementById('removeBtn').onclick = function () {
+        document.getElementById('circle').style.backgroundImage = 'none';
+        localStorage.removeItem('userPhoto');
+      };
+
+      // При загрузке страницы
+      loadPhoto();
+      window.onload = function () {
+        const inputs = document.querySelectorAll('.input_1 input');
+        inputs.forEach(input => {
+          const savedValue = localStorage.getItem(input.id);
+          if (savedValue) {
+            input.value = savedValue;
+          }
+        });
+      };
+    </script>
+  </main>
+
+
+
+  <footer>
+
+    <div class="line_main6"></div>
+    <div class="back_main6" id="contacts">
+      <img src="logo1.png" alt="">
+      <div><a href="index_main.html" class="logo1_text">3D Profi</a></div>
+      <div class="logo1_text1">Все права защищены.</div>
+      <p class="footer_text">Информация поддержка</p>
+      <p class="footer_line"></p>
+      <p class="footer_text1">+7 977 034 05 32</p>
+      <p class="footer_text2">vladevs221@gmail.com</p>
+      <p class="footer_text3">Политика конфиденциальности</p>
+      <p class="footer_text4">Мы в социальных сетях</p>
+      <p class="footer_line1"></p>
+      <p class="footer_text5">Telegram</p>
+      <p class="footer_text6">Whatsapp</p>
+      <p class="footer_text7">Vk</p>
+      <p class="img_footer"><img src="../icons/tg.png" alt=""></p>
+      <p class="img_footer1"><img src="../icons/wt.png" alt=""></p>
+      <p class="img_footer2"><img src="../icons/vk.png" alt=""></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

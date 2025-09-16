@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" id="index_main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Profi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style_basket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/l-ibs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="3dprofi">
+
+        <div class="logo">
+            <img src="../icons/logo.png" alt="#">
+        </div>
+
+
+        <div class="name_logo"><a href="index_main.html">3DProfi</a></div>
+
+        <div class="container">
+            <a href="index_reviews.html">
+                <div>Отзывы</div>
+            </a>
+            <a href="index_school.html">
+                <div>Преподователи</div>
+            </a>
+            <a href="index_basket.html">
+                <div>Курсы</div>
+            </a>
+            <a href="index_faq.html">
+                <div>FAQ</div>
+            </a>
+        </div>
+        <div class="exit"><a href="index1.html">
+                <img src="../icons/exit.png" alt="#"></a>
+        </div>
+        <div class="exit_line">
+            <img src="../icons/exit_line.png" alt="#">
+        </div>
+        <a href="index_login.html">
+            <div class="box_login">
+            </div>
+            <div class="name_login">Логин</div>
+        </a>
+
+        <div class="line_header"></div>
+
+
+
+
+
+
+    </header>
+
+
+    <main>
+
+
+        <div class="back_buy"></div>
+
+        <div class="container_payment">
+            <p class="text_payment">Выберите блоки обучения</p>
+            <p class="choice_payment_text">Все</p>
+            <p class="frame"></p>
+            <p class="line_payment"></p>
+            <p class="number_payment">1</p>
+
+            <input type="checkbox" class="checkbox-input1" id="checkbox1">
+            <input type="checkbox" class="checkbox-input1" id="checkbox2">
+            <input type="checkbox" class="checkbox-input1" id="checkbox3">
+            <input type="checkbox" class="checkbox-input1" id="checkbox4">
+            <input type="checkbox" class="checkbox-input1" id="checkbox5">
+            <input type="checkbox" class="checkbox-input1" id="checkbox6">
+            <input type="checkbox" class="checkbox-input1" id="checkbox7">
+            <input type="checkbox" class="checkbox-input1" id="checkbox8">
+            <input type="checkbox" class="checkbox-input1" id="checkbox9">
+            <input type="checkbox" class="checkbox-input1" id="checkbox10">
+
+            <script>
+                const checkbox1 = document.getElementById('checkbox1');
+                const checkboxes = document.querySelectorAll('.checkbox-input1'); // Выбираем все чекбоксы
+
+                checkbox1.addEventListener('change', () => {
+                    checkboxes.forEach(checkbox => {
+                        checkbox.checked = checkbox1.checked; // Синхронизируем состояние
+                    });
+                });
+            </script>
+            <div class="container_frame_payment">
+
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp1.png" alt="#">
+                    <p>Знакомство с Блендер</p>
+                </div>
+
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp2.png" alt="#">
+                    <p>Продвинутое моделирование</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp3.png" alt="#">
+                    <p>Детализация и текстуры</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp4.png" alt="#">
+                    <p>2D освещение</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp5.png" alt="#">
+                    <p>2D детализация</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp6.png" alt="#">
+                    <p>3 значит - Руки</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp7.png" alt="#">
+                    <p>Магия движения</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp8.png" alt="#">
+                    <p>Стилизованная голова</p>
+                </div>
+                <div class="logo_frame_payment">
+                    <img src="../icons/hp9.png" alt="#">
+                    <p>Мими-мимика</p>
+                </div>
+                <div class="back_frame1">
+                    <h1>20 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame2">
+                    <h1>20 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame3">
+                    <h1>21 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame4">
+                    <h1>22 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame5">
+                    <h1>29 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame6">
+                    <h1>29 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame7">
+                    <h1>28 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame8">
+                    <h1>25 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame9">
+                    <h1>24 900 Р</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame10">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame11">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame12">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame13">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame14">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame15">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame16">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame17">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame18">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+                <div class="back_frame19">
+                    <h1>8 часов</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="choice1">Выберите способ оплаты</div>
+        <div class="number_line2"></div>
+        <div class="buy_line1"></div>
+        <div class="number1_main4">2</div>
+
+        <div class="payment">
+            <div class="back_payment_full">
+                <div class="back_payment_full1" id="figura1"></div>
+                <div class="back_payment_full2" id="figura2" style="display: none;"></div>
+                <div class="text_payment_full" id="payNow">оплатить сразу</div>
+                <div class="text_payment_full1" id="installment">в рассрочку</div>
+                <div class="text_payment_full2">0 Р</div>
+                <div class="text_payment_full3">0 Р</div>
+            </div>
+
+
+            <input type="text" placeholder="Ваше имя" name="username" class="input2" id="name">
+            <input type="tel" placeholder="Телефон" name="tel" class="input3" id="phone">
+            <input type="email" placeholder="Электронная почта" name="email" class="input4" id="email">
+            <div class="text_back_payment4">Прежде чем оформить заказ, подтвердите ознакомление с документами</div>
+            <input type="checkbox" class="checkbox-input2" id="checkbox11">
+            <div class="back_payment5"></div>
+            <input type="checkbox" class="checkbox-input2" id="checkbox12">
+            <div class="back_payment6"></div>
+            <input type="checkbox" class="checkbox-input2" id="checkbox13">
+            <div class="back_payment7"></div>
+            <div class="back_payment8">
+                <button class="text_back_payment12" id="submitOrder">Оформить заказ</button>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('submitOrder').addEventListener('click', function (e) {
+                e.preventDefault(); // чтобы форма не отправлялась, если есть
+
+                // Получаем значения полей
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const email = document.getElementById('email').value.trim();
+
+                // Получаем чекбоксы
+                const checkbox1 = document.getElementById('checkbox11').checked;
+                const checkbox2 = document.getElementById('checkbox12').checked;
+                const checkbox3 = document.getElementById('checkbox13').checked;
+
+                // Проверка заполненности полей и отметки чекбоксов
+                if (!name || !phone || !email || !checkbox1 || !checkbox2 || !checkbox3) {
+                    alert('Заполните поля');
+                    return; // прерываем выполнение, если что-то не заполнено
+                }
+
+                // Если все заполнено — показываем сообщение
+                alert('Ваш заказ успешно оформлен');
+            });
+        </script>
+
+        <script>
+            const figura1 = document.getElementById('figura1');
+            const figura2 = document.getElementById('figura2');
+            const installmentBtn = document.getElementById('installment');
+            const payNowBtn = document.getElementById('payNow');
+
+            installmentBtn.addEventListener('click', () => {
+                // Показываем фигуру 2, скрываем фигуру 1
+                figura1.style.display = 'none';
+                figura2.style.display = 'block';
+            });
+
+            payNowBtn.addEventListener('click', () => {
+                // Возвращаем исходное состояние
+                figura1.style.display = 'block';
+                figura2.style.display = 'none';
+            });
+
+        </script>
+        <div class="text_back_payment5">Нажмите на кнопку "Оформить заказ"</div>
+        <div class="text_back_payment9">Даю согласие на обработку персональных данных</div>
+        <div class="text_back_payment10">Ознакомлен с условиями договоров-оферты</div>
+        <div class="text_back_payment11">Даю согласие на рекламную рассылку</div>
+
+
+    </main>
+
+
+
+    <footer>
+
+
+        <div class="back_main6" id="contacts">
+            <img src="../icons/logo1.png" alt="">
+            <div><a href="index_main.html" class="logo1_text">3D Profi</a></div>
+            <div class="logo1_text1">Все права защищены.</div>
+            <p class="footer_text">Информация поддержка</p>
+            <p class="footer_line"></p>
+            <p class="footer_text1">+7 977 034 05 32</p>
+            <p class="footer_text2">vladevs221@gmail.com</p>
+            <p class="footer_text3">Политика конфиденциальности</p>
+            <p class="footer_text4">Мы в социальных сетях</p>
+            <p class="footer_line1"></p>
+            <p class="footer_text5">Telegram</p>
+            <p class="footer_text6">Whatsapp</p>
+            <p class="footer_text7">Vk</p>
+            <p class="img_footer"><img src="../icons/tg.png" alt=""></p>
+            <p class="img_footer1"><img src="../icons/wt.png" alt=""></p>
+            <p class="img_footer2"><img src="../icons/vk.png" alt=""></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
