@@ -1,0 +1,533 @@
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normals;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  width: 1920px;
+  height: 198px;
+  left: 0;
+  top: 0;
+  background: black;
+  
+}
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 131px;
+  left: 88px;
+  top: 34px;
+}
+.name_logo {
+  position: absolute;
+  width: 162px;
+  height: 52px;
+  left: 212px;
+  top: 74px;
+  color: rgb(255, 255, 255);
+  font-family: Ubuntu;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.exit{
+
+position: absolute;
+width: 48px;
+height: 48px;
+left: 1503px;
+top: 76px;
+}
+.exit_line{
+
+position: absolute;
+width: 77px;
+height: 0;
+left: 1588.5px;
+top: 61px;
+
+}
+.container {
+  gap: 68px;
+  display: flex;
+  padding-left: 576px;
+  padding-top: 83px;
+  color: rgb(255, 255, 255);
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+header a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.box_login {
+  position: absolute;
+  width: 198px;
+  height: 77px;
+  left: 1626px;
+  top: 61px;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 38.5px;
+}
+.name_login {
+  position: absolute;
+  width: 87px;
+  height: 34px;
+  left: 1681px;
+  top: 80px;
+  color: rgb(255, 0, 0);
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.line_header {
+ 
+  position: absolute;
+  width: 1920px;
+  height: 0;
+  left: 0;
+  top: 199px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.main_back {
+
+position: absolute;
+width: 1920px;
+height: 942px;
+left: 0;
+top: 200px;
+  background: rgb(0, 0, 0);
+}
+.login{
+position: absolute;
+width: 1202px;
+height: 753px;
+left: 359px;
+top: 285px;
+border-radius: 30px;
+background: rgb(29, 29, 29);
+}
+
+#circle{
+  width: 329px;
+  height: 329px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(217, 217, 217);
+  background-size: cover;
+  background-position: center;
+  margin-left: 175px;
+  margin-top: 115px;
+}
+#uploadBtn{
+  width: 311px;
+  height: 50px;
+  display: flex;
+  margin-top: 77px;
+  margin-left: 184px;
+  font-size: 16px;
+  border-radius: 25px;
+  background: rgb(255, 0, 0);
+  border: none;
+  align-items: center;
+}
+.uploadBtn p{
+ color: rgb(255, 255, 255);
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-left: 22px;
+}
+.uploadBtn img{
+margin-left: 37px;
+}
+#removeBtn{
+width: 207px;
+height: 50px;
+box-sizing: border-box;
+border: 3px solid rgb(255, 0, 0);
+background: none;
+margin-top: 44px;
+margin-left: 236px;
+border-radius: 25px;
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 22px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: center;
+}
+#saveBtn{
+
+width: 311px;
+height: 50px;
+box-sizing: border-box;
+border-radius: 25px;
+border: 3px solid rgb(255, 0, 0);
+background: rgb(255, 0, 0);
+margin-top: 79px;
+margin-left: 522px;
+border-radius: 25px;
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 23px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+}
+#saveBtn:hover{
+  cursor: pointer;
+}
+
+.text_the_input{
+ position: absolute;
+width: 161px;
+height: 468px;
+left: 1024px;
+top: 400px;
+ 
+}
+.text_the_input p{
+color: rgba(255, 255, 255, 0.534);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+padding-bottom: 66px;
+margin: 0px;
+}
+
+
+
+
+
+
+.input_1{
+position: absolute;
+width: 700px;
+height: 468px;
+left: 1024px;
+top:430px;
+
+}
+#input1{
+width: 391px;
+background: none;
+border: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 41px;
+padding-bottom: 10px;
+height: 35px;
+}
+#input2{
+width: 391px;
+background: none;
+border: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 43px;
+padding-bottom: 10px;
+height: 35px;
+}
+#input3{
+width: 391px;
+background: none;
+border: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 40px;
+padding-bottom: 10px;
+height: 35px;
+
+}
+#input4{
+width: 391px;
+background: none;
+border: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 42px;
+padding-bottom: 10px;
+height: 35px;
+}
+#input5{
+width: 391px;
+background: none;
+border: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 45px;
+padding-bottom: 10px;
+height: 35px;
+}
+#input6{
+width: 391px;
+background: none;
+border: none;
+border-bottom: 1px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 40px;
+padding-bottom: 10px;
+height: 35px;
+
+}
+
+.error-message{
+font-family: Ubuntu;
+font-size: 10px;
+}
+
+.line_main6{
+
+position: absolute;
+width: 1920px;
+top: 1144.5px;
+border: 1px solid rgb(255, 255, 255);
+}
+.back_main6{
+position: absolute;
+width: 1920px;
+height: 380px;
+top: 1144px;
+left: 0px;
+background: rgb(0, 0, 0);
+}
+.back_main6 img{
+  position: absolute;
+  margin-top: 66.5px;
+  left: 218px;
+
+}
+.logo1_text{
+  position: absolute;
+  margin-top: 102.5px;
+  left: 325px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Ubuntu;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 57px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
+.logo1_text1{
+  position: absolute;
+  margin-top: 156.5px;
+  left: 325px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 5%;
+  text-align: left;
+}
+.footer_text{
+  position: absolute;
+  margin-top: 110px;
+  left: 745px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer_line{
+position: absolute;
+width: 350px;
+height: 0;
+left: 745px;
+margin-top: 149.5px;
+border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.footer_text1{
+  position: absolute;
+  margin-top: 165.5px;
+  left: 745px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Ubuntu;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 5%;
+  text-align: left;
+}
+.footer_text2{
+  position: absolute;
+  margin-top: 201.5px;
+  left: 745px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Ubuntu;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 5%;
+  text-align: left;
+}
+.footer_text3{
+  position: absolute;
+  margin-top: 237.5px;
+  left: 745px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Ubuntu;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 5%;
+  text-align: left;
+}
+.footer_text4{
+  position: absolute;
+  margin-top: 110px;
+  left: 1392px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer_line1{
+  position: absolute;
+  width: 334px;
+  height: 0;
+  left: 1392px;
+  margin-top: 149.5px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .img_footer{
+    position: absolute;
+    margin-top: 98.5px;
+    left: 1174px;
+  }
+  .img_footer1{
+    position: absolute;
+    margin-top: 148.5px;
+    left: 1174px;
+  }
+  .img_footer2{
+    position: absolute;
+    margin-top: 198.5px;
+    left: 1174px;
+  }
+  .footer_text5{
+    position: absolute;
+    margin-top: 165.5px;
+    left: 1452px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Ubuntu;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 5%;
+    text-align: left;
+  }
+  .footer_text6{
+    position: absolute;
+    margin-top: 222.5px;
+    left: 1452px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Ubuntu;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 5%;
+    text-align: left;
+  }
+  .footer_text7{
+    position: absolute;
+    margin-top: 273.5px;
+    left: 1452px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Ubuntu;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 5%;
+    text-align: left;
+  }
